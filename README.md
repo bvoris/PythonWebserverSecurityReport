@@ -26,7 +26,7 @@ Generates a report that is stored where the script is located<br />
 <br /><br />
 I am not responsible for how you use this! Use this at your own risk!<br />
 Sample Report:<br />
-<IMG SRC="https://github.com/bvoris/PythonWebserverSecurityReport/blob/master/screenshot.png">
+<IMG SRC="https://github.com/bvoris/PythonWebserverSecurityReport/blob/main/screenshot.png">
 <br />
 
 ## Connect with me at
