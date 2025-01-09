@@ -21,10 +21,7 @@ Gets sitemap.xml data<br />
 Gets crossdomain.xml data<br />
 Validates if vulnerable URLs exist and are accessible to the internet<br /><br />
 
-Generates a report located here:<br />
-C:\temp\Python-Security-Report-$URL.html<br />
-This is a early work in progress.<br />
-
+Generates a report that is stored where the script is located<br />
 
 <br /><br />
 I am not responsible for how you use this! Use this at your own risk!<br />
