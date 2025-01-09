@@ -29,7 +29,7 @@ This is a early work in progress.<br />
 <br /><br />
 I am not responsible for how you use this! Use this at your own risk!<br />
 Sample Report:<br />
-<IMG SRC="https://github.com/bvoris/PythonWebserverSecurityReport/blob/master/screenshot.PNG">
+<IMG SRC="https://github.com/bvoris/PythonWebserverSecurityReport/blob/master/screenshot.png">
 <br />
 
 ## Connect with me at
