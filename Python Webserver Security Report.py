@@ -1,3 +1,7 @@
+# Python Webserver Security Report
+# By Brad Voris
+# Version 1.0
+
 import requests
 import socket
 import ssl
