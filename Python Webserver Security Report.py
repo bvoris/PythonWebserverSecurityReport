@@ -1,6 +1,11 @@
 # Python Webserver Security Report
 # By Brad Voris
 # Version 1.0
+# Date Modified: 1/10/2025
+# Requirements: requests, socket, ssl, datetime & BeautifulSoup4 
+# Description: This tool gathers information from its target website and provides a report for open ports, ssl/certificate information, vulnerabile URLs and spider data
+# 
+
 
 import requests
 import socket
