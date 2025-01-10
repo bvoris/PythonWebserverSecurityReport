@@ -1,4 +1,4 @@
-<IMG SRC="https://github.com/bvoris/bvoris/blob/master/pythonicon.png?raw=true"> # Python Webserver Security Report
+<img src="https://github.com/bvoris/bvoris/blob/master/pythonicon.png" width=5% height=5% /># Python Webserver Security Report
 PowerShell Webserver Security Report<br />
 Created By: Brad Voris<br />
 Version: 1.0<br />
