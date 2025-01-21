@@ -1,11 +1,9 @@
 # Python Webserver Security Report
 # By Brad Voris
-# Version 1.0
-# Date Modified: 1/10/2025
-# Requirements: requests, socket, ssl, datetime & BeautifulSoup4 
-# Description: This tool gathers information from its target website and provides a report for open ports, ssl/certificate information, vulnerabile URLs and spider data
-# 
-
+# Version 1.1
+# Date Modified: 1/21/2025
+# Requirements: requests, socket, ssl, datetime & BeautifulSoup4
+# Description: This tool gathers information from its target website and provides a report for open ports, ssl/certificate information, vulnerable URLs and spider data
 
 import requests
 import socket
@@ -44,11 +42,21 @@ try:
     with socket.create_connection((hostname, 443)) as sock:
         with context.wrap_socket(sock, server_hostname=hostname) as ssock:
             cert = ssock.getpeercert()
+            public_key = ssock.cipher()[0]  # Extracting the cipher suite for more context if needed
+            # Get the SAN if it exists
+            san = None
+            for ext in cert.get('subjectAltName', []):
+                if ext[0] == 'DNS':
+                    san = ext[1]
+                    break
+
             cert_info = {
                 "Host Name": hostname,
                 "Issuer Name": cert.get('issuer', '')[-1][-1],
                 "Effective Date": cert.get('notBefore'),
                 "Expiration Date": cert.get('notAfter'),
+                "Subject Alternative Name": san if san else "None",
+                "Public Key Algorithm": ssock.version()  # The public key algorithm in use
             }
 except Exception as e:
     cert_info = {"Error": str(e)}
